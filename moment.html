@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+body{
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: darkgray;
+  font-weight: 300;
+  text-align: center;
+  background-color: lightyellow;
+}
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color:blueviolet;
+  color:lightpink;
+}
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+  font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    background-color:lightskyblue;
+    color:white (151, 137, 137);
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color:lightskyblue;
+
+
+
+
+ 
+  border-style: solid;
+  border-left-color: coral;
+}
+
+
+
+</style>
+
+    <title> </title>
+  </head>
+
+
+  <header>
+
+    
+  </header>
+
+
+
+  <body style="background-color: beige">
+    
+
+    <form>
+    what are you planning today?:<br>
+    <input type="text" name="todays event" style="text-align: center;"><br>
+   
+    <button class="saveBtn">save event</button>
+  </form>
+
+  <div class="row">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  </div>
+
+
+
+
+<p class="row">
+
+</p>
+
+<br>
+
+<p style="float: left;">
+9 AM
+</p>
+<br>
+
+<p style="float: left;">
+12 pm
+</p>
+
+
+
+<br>
+<p style="float: left;">
+5pm
+
+</p>
+
+
+
+
+
+
+
+<form>
+
+ <output>
+
+
+ </output>
+
+</form>
+
+
+
+
+
+
+  
+<footer>
+
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js">
+
+
+
+function enter (params) {
+  
+  document.getElementById("button").addEventListener("click")
+
+
+
+}
+
+
+
+var CurrentDate = moment(input).format();
+
+console.log(moment("input"))
+
+
+
+
+function loadIt() {
+        var planner = document.getElementById("input");
+        
+        if (!planner.value) 
+        {
+          planner.value = window.localStorage.getItem('value');
+        }
+
+       
+         window.localStorage.setItem('value', planner.value);
+
+}
+
+window.onbeforeunload = function(){
+    localStorage.setItem('value', document.getElementById("input").value); }
+
+</script>
+
+
+  </body>
+</html>
